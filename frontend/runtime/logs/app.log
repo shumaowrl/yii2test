@@ -1,0 +1,569 @@
+2016-09-01 13:39:47 [::1][-][5gfftbft327hvc9r87ud51tdn7][error][yii\db\Exception] exception 'PDOException' with message 'SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: NO)' in D:\www\localtest\vendor\yiisoft\yii2\db\Connection.php:603
+Stack trace:
+#0 D:\www\localtest\vendor\yiisoft\yii2\db\Connection.php(603): PDO->__construct('mysql:host=loca...', 'root', '', NULL)
+#1 D:\www\localtest\vendor\yiisoft\yii2\db\Connection.php(545): yii\db\Connection->createPdoInstance()
+#2 D:\www\localtest\vendor\yiisoft\yii2\db\Connection.php(864): yii\db\Connection->open()
+#3 D:\www\localtest\vendor\yiisoft\yii2\db\Connection.php(851): yii\db\Connection->getMasterPdo()
+#4 D:\www\localtest\vendor\yiisoft\yii2\db\Schema.php(480): yii\db\Connection->getSlavePdo()
+#5 D:\www\localtest\vendor\yiisoft\yii2\db\Connection.php(760): yii\db\Schema->quoteValue('<span class="st...')
+#6 D:\www\localtest\vendor\yiisoft\yii2\db\Command.php(175): yii\db\Connection->quoteValue('<span class="st...')
+#7 D:\www\localtest\vendor\yiisoft\yii2\db\Command.php(869): yii\db\Command->getRawSql()
+#8 D:\www\localtest\vendor\yiisoft\yii2\db\Command.php(388): yii\db\Command->queryInternal('<span class="st...', '<span class="nu...')
+#9 D:\www\localtest\vendor\yiisoft\yii2\db\Query.php(367): yii\db\Command->queryScalar()
+#10 D:\www\localtest\vendor\yiisoft\yii2\validators\UniqueValidator.php(125): yii\db\Query->exists()
+#11 D:\www\localtest\vendor\yiisoft\yii2\validators\Validator.php(252): yii\validators\UniqueValidator->validateAttribute(Object(frontend\models\SignupForm), '<span class="st...')
+#12 D:\www\localtest\vendor\yiisoft\yii2\base\Model.php(356): yii\validators\Validator->validateAttributes(Object(frontend\models\SignupForm), '[<span class="s...')
+#13 D:\www\localtest\frontend\models\SignupForm.php(46): yii\base\Model->validate()
+#14 D:\www\localtest\frontend\controllers\SiteController.php(153): frontend\models\SignupForm->signup()
+#15 [internal function]: frontend\controllers\SiteController->actionSignup()
+#16 D:\www\localtest\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array('[<span class="t...', '[]')
+#17 D:\www\localtest\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams('[<span class="s...')
+#18 D:\www\localtest\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('<span class="st...', '[<span class="s...')
+#19 D:\www\localtest\vendor\yiisoft\yii2\web\Application.php(87): yii\base\Module->runAction('<span class="st...', '[<span class="s...')
+#20 D:\www\localtest\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#21 D:\www\localtest\frontend\web\index.php(18): yii\base\Application->run()
+#22 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: NO)' in D:\www\localtest\vendor\yiisoft\yii2\db\Connection.php:550
+Stack trace:
+#0 D:\www\localtest\vendor\yiisoft\yii2\db\Connection.php(864): yii\db\Connection->open()
+#1 D:\www\localtest\vendor\yiisoft\yii2\db\Connection.php(851): yii\db\Connection->getMasterPdo()
+#2 D:\www\localtest\vendor\yiisoft\yii2\db\Schema.php(480): yii\db\Connection->getSlavePdo()
+#3 D:\www\localtest\vendor\yiisoft\yii2\db\Connection.php(760): yii\db\Schema->quoteValue('<span class="st...')
+#4 D:\www\localtest\vendor\yiisoft\yii2\db\Command.php(175): yii\db\Connection->quoteValue('<span class="st...')
+#5 D:\www\localtest\vendor\yiisoft\yii2\db\Command.php(869): yii\db\Command->getRawSql()
+#6 D:\www\localtest\vendor\yiisoft\yii2\db\Command.php(388): yii\db\Command->queryInternal('<span class="st...', '<span class="nu...')
+#7 D:\www\localtest\vendor\yiisoft\yii2\db\Query.php(367): yii\db\Command->queryScalar()
+#8 D:\www\localtest\vendor\yiisoft\yii2\validators\UniqueValidator.php(125): yii\db\Query->exists()
+#9 D:\www\localtest\vendor\yiisoft\yii2\validators\Validator.php(252): yii\validators\UniqueValidator->validateAttribute(Object(frontend\models\SignupForm), '<span class="st...')
+#10 D:\www\localtest\vendor\yiisoft\yii2\base\Model.php(356): yii\validators\Validator->validateAttributes(Object(frontend\models\SignupForm), '[<span class="s...')
+#11 D:\www\localtest\frontend\models\SignupForm.php(46): yii\base\Model->validate()
+#12 D:\www\localtest\frontend\controllers\SiteController.php(153): frontend\models\SignupForm->signup()
+#13 [internal function]: frontend\controllers\SiteController->actionSignup()
+#14 D:\www\localtest\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array('[<span class="t...', '[]')
+#15 D:\www\localtest\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams('[<span class="s...')
+#16 D:\www\localtest\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('<span class="st...', '[<span class="s...')
+#17 D:\www\localtest\vendor\yiisoft\yii2\web\Application.php(87): yii\base\Module->runAction('<span class="st...', '[<span class="s...')
+#18 D:\www\localtest\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#19 D:\www\localtest\frontend\web\index.php(18): yii\base\Application->run()
+#20 {main}
+Additional Information:
+
+2016-09-01 13:39:47 [::1][-][5gfftbft327hvc9r87ud51tdn7][info][application] $_GET = [
+    'r' => 'site/signup'
+]
+
+$_POST = [
+    '_csrf-frontend' => 'bUtJUVhqeDVUAjwGPSI8Z10hB2ASKyhvP3wqZSA6FUc1HAo5NDMafQ=='
+    'SignupForm' => [
+        'username' => 'wangrl'
+        'email' => '783413037@qq.com'
+        'password' => '123456'
+    ]
+    'signup-button' => ''
+]
+
+$_COOKIE = [
+    'advanced-frontend' => '5gfftbft327hvc9r87ud51tdn7'
+    '_csrf-frontend' => '086fbbc95528a84c6fdf7bf8c06b8c4c40191eafc1fd8084b61295008a66cad5a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"9IuWeHDR0jN1JAPZR7c4xPmrXWChlYbH\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'TeachInfinity'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/localtest/frontend/web/index.php?r=site%2Fsignup'
+    'HTTP_COOKIE' => 'advanced-frontend=5gfftbft327hvc9r87ud51tdn7; _csrf-frontend=086fbbc95528a84c6fdf7bf8c06b8c4c40191eafc1fd8084b61295008a66cad5a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%229IuWeHDR0jN1JAPZR7c4xPmrXWChlYbH%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'CONTENT_LENGTH' => '195'
+    'PATH' => 'D:\\pf\\Python 2.7\\;D:\\pf\\Python 2.7\\Scripts;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\TortoiseSVN\\bin;D:\\pf\\php\\curl_7_50_0_openssl_nghttp2_x64;D:\\pf\\php\\php-5.6.13-Win32-VC11-x64;C:\\ProgramData\\ComposerSetup\\bin;D:\\pf\\Python 2.7;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.16 (Win64) PHP/5.6.13'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'D:/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/www'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'D:/www/localtest/frontend/web/index.php'
+    'REMOTE_PORT' => '61239'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=site%2Fsignup'
+    'REQUEST_URI' => '/localtest/frontend/web/index.php?r=site%2Fsignup'
+    'SCRIPT_NAME' => '/localtest/frontend/web/index.php'
+    'PHP_SELF' => '/localtest/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1472708387.232
+    'REQUEST_TIME' => 1472708387
+]
+2016-09-01 13:40:52 [::1][-][5gfftbft327hvc9r87ud51tdn7][error][yii\db\Exception] exception 'PDOException' with message 'SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: NO)' in D:\www\localtest\vendor\yiisoft\yii2\db\Connection.php:603
+Stack trace:
+#0 D:\www\localtest\vendor\yiisoft\yii2\db\Connection.php(603): PDO->__construct('mysql:host=loca...', 'root', '', NULL)
+#1 D:\www\localtest\vendor\yiisoft\yii2\db\Connection.php(545): yii\db\Connection->createPdoInstance()
+#2 D:\www\localtest\vendor\yiisoft\yii2\db\Connection.php(864): yii\db\Connection->open()
+#3 D:\www\localtest\vendor\yiisoft\yii2\db\Connection.php(851): yii\db\Connection->getMasterPdo()
+#4 D:\www\localtest\vendor\yiisoft\yii2\db\Schema.php(480): yii\db\Connection->getSlavePdo()
+#5 D:\www\localtest\vendor\yiisoft\yii2\db\Connection.php(760): yii\db\Schema->quoteValue('<span class="st...')
+#6 D:\www\localtest\vendor\yiisoft\yii2\db\Command.php(175): yii\db\Connection->quoteValue('<span class="st...')
+#7 D:\www\localtest\vendor\yiisoft\yii2\db\Command.php(869): yii\db\Command->getRawSql()
+#8 D:\www\localtest\vendor\yiisoft\yii2\db\Command.php(388): yii\db\Command->queryInternal('<span class="st...', '<span class="nu...')
+#9 D:\www\localtest\vendor\yiisoft\yii2\db\Query.php(367): yii\db\Command->queryScalar()
+#10 D:\www\localtest\vendor\yiisoft\yii2\validators\UniqueValidator.php(125): yii\db\Query->exists()
+#11 D:\www\localtest\vendor\yiisoft\yii2\validators\Validator.php(252): yii\validators\UniqueValidator->validateAttribute(Object(frontend\models\SignupForm), '<span class="st...')
+#12 D:\www\localtest\vendor\yiisoft\yii2\base\Model.php(356): yii\validators\Validator->validateAttributes(Object(frontend\models\SignupForm), '[<span class="s...')
+#13 D:\www\localtest\frontend\models\SignupForm.php(46): yii\base\Model->validate()
+#14 D:\www\localtest\frontend\controllers\SiteController.php(153): frontend\models\SignupForm->signup()
+#15 [internal function]: frontend\controllers\SiteController->actionSignup()
+#16 D:\www\localtest\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array('[<span class="t...', '[]')
+#17 D:\www\localtest\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams('[<span class="s...')
+#18 D:\www\localtest\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('<span class="st...', '[<span class="s...')
+#19 D:\www\localtest\vendor\yiisoft\yii2\web\Application.php(87): yii\base\Module->runAction('<span class="st...', '[<span class="s...')
+#20 D:\www\localtest\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#21 D:\www\localtest\frontend\web\index.php(18): yii\base\Application->run()
+#22 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: NO)' in D:\www\localtest\vendor\yiisoft\yii2\db\Connection.php:550
+Stack trace:
+#0 D:\www\localtest\vendor\yiisoft\yii2\db\Connection.php(864): yii\db\Connection->open()
+#1 D:\www\localtest\vendor\yiisoft\yii2\db\Connection.php(851): yii\db\Connection->getMasterPdo()
+#2 D:\www\localtest\vendor\yiisoft\yii2\db\Schema.php(480): yii\db\Connection->getSlavePdo()
+#3 D:\www\localtest\vendor\yiisoft\yii2\db\Connection.php(760): yii\db\Schema->quoteValue('<span class="st...')
+#4 D:\www\localtest\vendor\yiisoft\yii2\db\Command.php(175): yii\db\Connection->quoteValue('<span class="st...')
+#5 D:\www\localtest\vendor\yiisoft\yii2\db\Command.php(869): yii\db\Command->getRawSql()
+#6 D:\www\localtest\vendor\yiisoft\yii2\db\Command.php(388): yii\db\Command->queryInternal('<span class="st...', '<span class="nu...')
+#7 D:\www\localtest\vendor\yiisoft\yii2\db\Query.php(367): yii\db\Command->queryScalar()
+#8 D:\www\localtest\vendor\yiisoft\yii2\validators\UniqueValidator.php(125): yii\db\Query->exists()
+#9 D:\www\localtest\vendor\yiisoft\yii2\validators\Validator.php(252): yii\validators\UniqueValidator->validateAttribute(Object(frontend\models\SignupForm), '<span class="st...')
+#10 D:\www\localtest\vendor\yiisoft\yii2\base\Model.php(356): yii\validators\Validator->validateAttributes(Object(frontend\models\SignupForm), '[<span class="s...')
+#11 D:\www\localtest\frontend\models\SignupForm.php(46): yii\base\Model->validate()
+#12 D:\www\localtest\frontend\controllers\SiteController.php(153): frontend\models\SignupForm->signup()
+#13 [internal function]: frontend\controllers\SiteController->actionSignup()
+#14 D:\www\localtest\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array('[<span class="t...', '[]')
+#15 D:\www\localtest\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams('[<span class="s...')
+#16 D:\www\localtest\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('<span class="st...', '[<span class="s...')
+#17 D:\www\localtest\vendor\yiisoft\yii2\web\Application.php(87): yii\base\Module->runAction('<span class="st...', '[<span class="s...')
+#18 D:\www\localtest\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#19 D:\www\localtest\frontend\web\index.php(18): yii\base\Application->run()
+#20 {main}
+Additional Information:
+
+2016-09-01 13:40:52 [::1][-][5gfftbft327hvc9r87ud51tdn7][info][application] $_GET = [
+    'r' => 'site/signup'
+]
+
+$_POST = [
+    '_csrf-frontend' => 'bUtJUVhqeDVUAjwGPSI8Z10hB2ASKyhvP3wqZSA6FUc1HAo5NDMafQ=='
+    'SignupForm' => [
+        'username' => 'wangrl'
+        'email' => '783413037@qq.com'
+        'password' => '123456'
+    ]
+    'signup-button' => ''
+]
+
+$_COOKIE = [
+    'advanced-frontend' => '5gfftbft327hvc9r87ud51tdn7'
+    '_csrf-frontend' => '086fbbc95528a84c6fdf7bf8c06b8c4c40191eafc1fd8084b61295008a66cad5a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"9IuWeHDR0jN1JAPZR7c4xPmrXWChlYbH\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'TeachInfinity'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/localtest/frontend/web/index.php?r=site%2Fsignup'
+    'HTTP_COOKIE' => 'advanced-frontend=5gfftbft327hvc9r87ud51tdn7; _csrf-frontend=086fbbc95528a84c6fdf7bf8c06b8c4c40191eafc1fd8084b61295008a66cad5a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%229IuWeHDR0jN1JAPZR7c4xPmrXWChlYbH%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'CONTENT_LENGTH' => '195'
+    'PATH' => 'D:\\pf\\Python 2.7\\;D:\\pf\\Python 2.7\\Scripts;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\TortoiseSVN\\bin;D:\\pf\\php\\curl_7_50_0_openssl_nghttp2_x64;D:\\pf\\php\\php-5.6.13-Win32-VC11-x64;C:\\ProgramData\\ComposerSetup\\bin;D:\\pf\\Python 2.7;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.16 (Win64) PHP/5.6.13'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'D:/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/www'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'D:/www/localtest/frontend/web/index.php'
+    'REMOTE_PORT' => '61247'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=site%2Fsignup'
+    'REQUEST_URI' => '/localtest/frontend/web/index.php?r=site%2Fsignup'
+    'SCRIPT_NAME' => '/localtest/frontend/web/index.php'
+    'PHP_SELF' => '/localtest/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1472708452.851
+    'REQUEST_TIME' => 1472708452
+]
+2016-09-01 13:56:10 [::1][-][5gfftbft327hvc9r87ud51tdn7][error][yii\db\Exception] exception 'PDOException' with message 'SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: NO)' in D:\www\localtest\vendor\yiisoft\yii2\db\Connection.php:603
+Stack trace:
+#0 D:\www\localtest\vendor\yiisoft\yii2\db\Connection.php(603): PDO->__construct('mysql:host=loca...', 'root', '', NULL)
+#1 D:\www\localtest\vendor\yiisoft\yii2\db\Connection.php(545): yii\db\Connection->createPdoInstance()
+#2 D:\www\localtest\vendor\yiisoft\yii2\db\Connection.php(864): yii\db\Connection->open()
+#3 D:\www\localtest\vendor\yiisoft\yii2\db\Connection.php(851): yii\db\Connection->getMasterPdo()
+#4 D:\www\localtest\vendor\yiisoft\yii2\db\Schema.php(480): yii\db\Connection->getSlavePdo()
+#5 D:\www\localtest\vendor\yiisoft\yii2\db\Connection.php(760): yii\db\Schema->quoteValue('<span class="st...')
+#6 D:\www\localtest\vendor\yiisoft\yii2\db\Command.php(175): yii\db\Connection->quoteValue('<span class="st...')
+#7 D:\www\localtest\vendor\yiisoft\yii2\db\Command.php(869): yii\db\Command->getRawSql()
+#8 D:\www\localtest\vendor\yiisoft\yii2\db\Command.php(388): yii\db\Command->queryInternal('<span class="st...', '<span class="nu...')
+#9 D:\www\localtest\vendor\yiisoft\yii2\db\Query.php(367): yii\db\Command->queryScalar()
+#10 D:\www\localtest\vendor\yiisoft\yii2\validators\UniqueValidator.php(125): yii\db\Query->exists()
+#11 D:\www\localtest\vendor\yiisoft\yii2\validators\Validator.php(252): yii\validators\UniqueValidator->validateAttribute(Object(frontend\models\SignupForm), '<span class="st...')
+#12 D:\www\localtest\vendor\yiisoft\yii2\base\Model.php(356): yii\validators\Validator->validateAttributes(Object(frontend\models\SignupForm), '[<span class="s...')
+#13 D:\www\localtest\frontend\models\SignupForm.php(46): yii\base\Model->validate()
+#14 D:\www\localtest\frontend\controllers\SiteController.php(153): frontend\models\SignupForm->signup()
+#15 [internal function]: frontend\controllers\SiteController->actionSignup()
+#16 D:\www\localtest\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array('[<span class="t...', '[]')
+#17 D:\www\localtest\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams('[<span class="s...')
+#18 D:\www\localtest\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('<span class="st...', '[<span class="s...')
+#19 D:\www\localtest\vendor\yiisoft\yii2\web\Application.php(87): yii\base\Module->runAction('<span class="st...', '[<span class="s...')
+#20 D:\www\localtest\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#21 D:\www\localtest\frontend\web\index.php(18): yii\base\Application->run()
+#22 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: NO)' in D:\www\localtest\vendor\yiisoft\yii2\db\Connection.php:550
+Stack trace:
+#0 D:\www\localtest\vendor\yiisoft\yii2\db\Connection.php(864): yii\db\Connection->open()
+#1 D:\www\localtest\vendor\yiisoft\yii2\db\Connection.php(851): yii\db\Connection->getMasterPdo()
+#2 D:\www\localtest\vendor\yiisoft\yii2\db\Schema.php(480): yii\db\Connection->getSlavePdo()
+#3 D:\www\localtest\vendor\yiisoft\yii2\db\Connection.php(760): yii\db\Schema->quoteValue('<span class="st...')
+#4 D:\www\localtest\vendor\yiisoft\yii2\db\Command.php(175): yii\db\Connection->quoteValue('<span class="st...')
+#5 D:\www\localtest\vendor\yiisoft\yii2\db\Command.php(869): yii\db\Command->getRawSql()
+#6 D:\www\localtest\vendor\yiisoft\yii2\db\Command.php(388): yii\db\Command->queryInternal('<span class="st...', '<span class="nu...')
+#7 D:\www\localtest\vendor\yiisoft\yii2\db\Query.php(367): yii\db\Command->queryScalar()
+#8 D:\www\localtest\vendor\yiisoft\yii2\validators\UniqueValidator.php(125): yii\db\Query->exists()
+#9 D:\www\localtest\vendor\yiisoft\yii2\validators\Validator.php(252): yii\validators\UniqueValidator->validateAttribute(Object(frontend\models\SignupForm), '<span class="st...')
+#10 D:\www\localtest\vendor\yiisoft\yii2\base\Model.php(356): yii\validators\Validator->validateAttributes(Object(frontend\models\SignupForm), '[<span class="s...')
+#11 D:\www\localtest\frontend\models\SignupForm.php(46): yii\base\Model->validate()
+#12 D:\www\localtest\frontend\controllers\SiteController.php(153): frontend\models\SignupForm->signup()
+#13 [internal function]: frontend\controllers\SiteController->actionSignup()
+#14 D:\www\localtest\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array('[<span class="t...', '[]')
+#15 D:\www\localtest\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams('[<span class="s...')
+#16 D:\www\localtest\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('<span class="st...', '[<span class="s...')
+#17 D:\www\localtest\vendor\yiisoft\yii2\web\Application.php(87): yii\base\Module->runAction('<span class="st...', '[<span class="s...')
+#18 D:\www\localtest\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#19 D:\www\localtest\frontend\web\index.php(18): yii\base\Application->run()
+#20 {main}
+Additional Information:
+
+2016-09-01 13:56:09 [::1][-][5gfftbft327hvc9r87ud51tdn7][info][application] $_GET = [
+    'r' => 'site/signup'
+]
+
+$_POST = [
+    '_csrf-frontend' => 'bUtJUVhqeDVUAjwGPSI8Z10hB2ASKyhvP3wqZSA6FUc1HAo5NDMafQ=='
+    'SignupForm' => [
+        'username' => 'wangrl'
+        'email' => '783413037@qq.com'
+        'password' => '123456'
+    ]
+    'signup-button' => ''
+]
+
+$_COOKIE = [
+    'advanced-frontend' => '5gfftbft327hvc9r87ud51tdn7'
+    '_csrf-frontend' => '086fbbc95528a84c6fdf7bf8c06b8c4c40191eafc1fd8084b61295008a66cad5a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"9IuWeHDR0jN1JAPZR7c4xPmrXWChlYbH\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'TeachInfinity'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/localtest/frontend/web/index.php?r=site%2Fsignup'
+    'HTTP_COOKIE' => 'advanced-frontend=5gfftbft327hvc9r87ud51tdn7; _csrf-frontend=086fbbc95528a84c6fdf7bf8c06b8c4c40191eafc1fd8084b61295008a66cad5a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%229IuWeHDR0jN1JAPZR7c4xPmrXWChlYbH%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'CONTENT_LENGTH' => '195'
+    'PATH' => 'D:\\pf\\Python 2.7\\;D:\\pf\\Python 2.7\\Scripts;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\TortoiseSVN\\bin;D:\\pf\\php\\curl_7_50_0_openssl_nghttp2_x64;D:\\pf\\php\\php-5.6.13-Win32-VC11-x64;C:\\ProgramData\\ComposerSetup\\bin;D:\\pf\\Python 2.7;C:\\work\\softWare\\wamp\\bin\\mysql\\mysql5.6.17\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.16 (Win64) PHP/5.6.13'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'D:/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/www'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'D:/www/localtest/frontend/web/index.php'
+    'REMOTE_PORT' => '61719'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=site%2Fsignup'
+    'REQUEST_URI' => '/localtest/frontend/web/index.php?r=site%2Fsignup'
+    'SCRIPT_NAME' => '/localtest/frontend/web/index.php'
+    'PHP_SELF' => '/localtest/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1472709369.735
+    'REQUEST_TIME' => 1472709369
+]
+2016-09-01 14:49:08 [::1][-][5gfftbft327hvc9r87ud51tdn7][error][yii\db\Exception] exception 'PDOException' with message 'SQLSTATE[HY000] [1049] Unknown database 'yii2advanced'' in D:\www\localtest\vendor\yiisoft\yii2\db\Connection.php:603
+Stack trace:
+#0 D:\www\localtest\vendor\yiisoft\yii2\db\Connection.php(603): PDO->__construct('mysql:host=loca...', 'root', '', NULL)
+#1 D:\www\localtest\vendor\yiisoft\yii2\db\Connection.php(545): yii\db\Connection->createPdoInstance()
+#2 D:\www\localtest\vendor\yiisoft\yii2\db\Connection.php(864): yii\db\Connection->open()
+#3 D:\www\localtest\vendor\yiisoft\yii2\db\Connection.php(851): yii\db\Connection->getMasterPdo()
+#4 D:\www\localtest\vendor\yiisoft\yii2\db\Schema.php(480): yii\db\Connection->getSlavePdo()
+#5 D:\www\localtest\vendor\yiisoft\yii2\db\Connection.php(760): yii\db\Schema->quoteValue('<span class="st...')
+#6 D:\www\localtest\vendor\yiisoft\yii2\db\Command.php(175): yii\db\Connection->quoteValue('<span class="st...')
+#7 D:\www\localtest\vendor\yiisoft\yii2\db\Command.php(869): yii\db\Command->getRawSql()
+#8 D:\www\localtest\vendor\yiisoft\yii2\db\Command.php(388): yii\db\Command->queryInternal('<span class="st...', '<span class="nu...')
+#9 D:\www\localtest\vendor\yiisoft\yii2\db\Query.php(367): yii\db\Command->queryScalar()
+#10 D:\www\localtest\vendor\yiisoft\yii2\validators\UniqueValidator.php(125): yii\db\Query->exists()
+#11 D:\www\localtest\vendor\yiisoft\yii2\validators\Validator.php(252): yii\validators\UniqueValidator->validateAttribute(Object(frontend\models\SignupForm), '<span class="st...')
+#12 D:\www\localtest\vendor\yiisoft\yii2\base\Model.php(356): yii\validators\Validator->validateAttributes(Object(frontend\models\SignupForm), '[<span class="s...')
+#13 D:\www\localtest\frontend\models\SignupForm.php(46): yii\base\Model->validate()
+#14 D:\www\localtest\frontend\controllers\SiteController.php(153): frontend\models\SignupForm->signup()
+#15 [internal function]: frontend\controllers\SiteController->actionSignup()
+#16 D:\www\localtest\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array('[<span class="t...', '[]')
+#17 D:\www\localtest\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams('[<span class="s...')
+#18 D:\www\localtest\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('<span class="st...', '[<span class="s...')
+#19 D:\www\localtest\vendor\yiisoft\yii2\web\Application.php(87): yii\base\Module->runAction('<span class="st...', '[<span class="s...')
+#20 D:\www\localtest\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#21 D:\www\localtest\frontend\web\index.php(18): yii\base\Application->run()
+#22 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[HY000] [1049] Unknown database 'yii2advanced'' in D:\www\localtest\vendor\yiisoft\yii2\db\Connection.php:550
+Stack trace:
+#0 D:\www\localtest\vendor\yiisoft\yii2\db\Connection.php(864): yii\db\Connection->open()
+#1 D:\www\localtest\vendor\yiisoft\yii2\db\Connection.php(851): yii\db\Connection->getMasterPdo()
+#2 D:\www\localtest\vendor\yiisoft\yii2\db\Schema.php(480): yii\db\Connection->getSlavePdo()
+#3 D:\www\localtest\vendor\yiisoft\yii2\db\Connection.php(760): yii\db\Schema->quoteValue('<span class="st...')
+#4 D:\www\localtest\vendor\yiisoft\yii2\db\Command.php(175): yii\db\Connection->quoteValue('<span class="st...')
+#5 D:\www\localtest\vendor\yiisoft\yii2\db\Command.php(869): yii\db\Command->getRawSql()
+#6 D:\www\localtest\vendor\yiisoft\yii2\db\Command.php(388): yii\db\Command->queryInternal('<span class="st...', '<span class="nu...')
+#7 D:\www\localtest\vendor\yiisoft\yii2\db\Query.php(367): yii\db\Command->queryScalar()
+#8 D:\www\localtest\vendor\yiisoft\yii2\validators\UniqueValidator.php(125): yii\db\Query->exists()
+#9 D:\www\localtest\vendor\yiisoft\yii2\validators\Validator.php(252): yii\validators\UniqueValidator->validateAttribute(Object(frontend\models\SignupForm), '<span class="st...')
+#10 D:\www\localtest\vendor\yiisoft\yii2\base\Model.php(356): yii\validators\Validator->validateAttributes(Object(frontend\models\SignupForm), '[<span class="s...')
+#11 D:\www\localtest\frontend\models\SignupForm.php(46): yii\base\Model->validate()
+#12 D:\www\localtest\frontend\controllers\SiteController.php(153): frontend\models\SignupForm->signup()
+#13 [internal function]: frontend\controllers\SiteController->actionSignup()
+#14 D:\www\localtest\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array('[<span class="t...', '[]')
+#15 D:\www\localtest\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams('[<span class="s...')
+#16 D:\www\localtest\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('<span class="st...', '[<span class="s...')
+#17 D:\www\localtest\vendor\yiisoft\yii2\web\Application.php(87): yii\base\Module->runAction('<span class="st...', '[<span class="s...')
+#18 D:\www\localtest\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#19 D:\www\localtest\frontend\web\index.php(18): yii\base\Application->run()
+#20 {main}
+Additional Information:
+
+2016-09-01 14:49:08 [::1][-][5gfftbft327hvc9r87ud51tdn7][info][application] $_GET = [
+    'r' => 'site/signup'
+]
+
+$_POST = [
+    '_csrf-frontend' => 'bUtJUVhqeDVUAjwGPSI8Z10hB2ASKyhvP3wqZSA6FUc1HAo5NDMafQ=='
+    'SignupForm' => [
+        'username' => 'wangrl'
+        'email' => '783413037@qq.com'
+        'password' => '123456'
+    ]
+    'signup-button' => ''
+]
+
+$_COOKIE = [
+    'advanced-frontend' => '5gfftbft327hvc9r87ud51tdn7'
+    '_csrf-frontend' => '086fbbc95528a84c6fdf7bf8c06b8c4c40191eafc1fd8084b61295008a66cad5a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"9IuWeHDR0jN1JAPZR7c4xPmrXWChlYbH\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'TeachInfinity'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/localtest/frontend/web/index.php?r=site%2Fsignup'
+    'HTTP_COOKIE' => 'advanced-frontend=5gfftbft327hvc9r87ud51tdn7; _csrf-frontend=086fbbc95528a84c6fdf7bf8c06b8c4c40191eafc1fd8084b61295008a66cad5a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%229IuWeHDR0jN1JAPZR7c4xPmrXWChlYbH%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'CONTENT_LENGTH' => '195'
+    'PATH' => 'D:\\pf\\Python 2.7\\;D:\\pf\\Python 2.7\\Scripts;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\TortoiseSVN\\bin;D:\\pf\\php\\curl_7_50_0_openssl_nghttp2_x64;D:\\pf\\php\\php-5.6.13-Win32-VC11-x64;C:\\ProgramData\\ComposerSetup\\bin;D:\\pf\\Python 2.7;C:\\work\\softWare\\wamp\\bin\\mysql\\mysql5.6.17\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.16 (Win64) PHP/5.6.13'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'D:/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/www'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'D:/www/localtest/frontend/web/index.php'
+    'REMOTE_PORT' => '62975'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=site%2Fsignup'
+    'REQUEST_URI' => '/localtest/frontend/web/index.php?r=site%2Fsignup'
+    'SCRIPT_NAME' => '/localtest/frontend/web/index.php'
+    'PHP_SELF' => '/localtest/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1472712548.071
+    'REQUEST_TIME' => 1472712548
+]
+2016-09-01 14:53:33 [::1][-][5gfftbft327hvc9r87ud51tdn7][error][yii\db\Exception] exception 'PDOException' with message 'SQLSTATE[42S02]: Base table or view not found: 1146 Table 'test.user' doesn't exist' in D:\www\localtest\vendor\yiisoft\yii2\db\Command.php:900
+Stack trace:
+#0 D:\www\localtest\vendor\yiisoft\yii2\db\Command.php(900): PDOStatement->execute()
+#1 D:\www\localtest\vendor\yiisoft\yii2\db\Command.php(388): yii\db\Command->queryInternal('<span class="st...', '<span class="nu...')
+#2 D:\www\localtest\vendor\yiisoft\yii2\db\Query.php(367): yii\db\Command->queryScalar()
+#3 D:\www\localtest\vendor\yiisoft\yii2\validators\UniqueValidator.php(125): yii\db\Query->exists()
+#4 D:\www\localtest\vendor\yiisoft\yii2\validators\Validator.php(252): yii\validators\UniqueValidator->validateAttribute(Object(frontend\models\SignupForm), '<span class="st...')
+#5 D:\www\localtest\vendor\yiisoft\yii2\base\Model.php(356): yii\validators\Validator->validateAttributes(Object(frontend\models\SignupForm), '[<span class="s...')
+#6 D:\www\localtest\frontend\models\SignupForm.php(46): yii\base\Model->validate()
+#7 D:\www\localtest\frontend\controllers\SiteController.php(153): frontend\models\SignupForm->signup()
+#8 [internal function]: frontend\controllers\SiteController->actionSignup()
+#9 D:\www\localtest\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array('[<span class="t...', '[]')
+#10 D:\www\localtest\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams('[<span class="s...')
+#11 D:\www\localtest\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('<span class="st...', '[<span class="s...')
+#12 D:\www\localtest\vendor\yiisoft\yii2\web\Application.php(87): yii\base\Module->runAction('<span class="st...', '[<span class="s...')
+#13 D:\www\localtest\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#14 D:\www\localtest\frontend\web\index.php(18): yii\base\Application->run()
+#15 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[42S02]: Base table or view not found: 1146 Table 'test.user' doesn't exist
+The SQL being executed was: SELECT EXISTS(SELECT * FROM `user` WHERE `username`='wangrl')' in D:\www\localtest\vendor\yiisoft\yii2\db\Schema.php:633
+Stack trace:
+#0 D:\www\localtest\vendor\yiisoft\yii2\db\Command.php(915): yii\db\Schema->convertException(Object(PDOException), 'SELECT EXISTS(S...')
+#1 D:\www\localtest\vendor\yiisoft\yii2\db\Command.php(388): yii\db\Command->queryInternal('<span class="st...', '<span class="nu...')
+#2 D:\www\localtest\vendor\yiisoft\yii2\db\Query.php(367): yii\db\Command->queryScalar()
+#3 D:\www\localtest\vendor\yiisoft\yii2\validators\UniqueValidator.php(125): yii\db\Query->exists()
+#4 D:\www\localtest\vendor\yiisoft\yii2\validators\Validator.php(252): yii\validators\UniqueValidator->validateAttribute(Object(frontend\models\SignupForm), '<span class="st...')
+#5 D:\www\localtest\vendor\yiisoft\yii2\base\Model.php(356): yii\validators\Validator->validateAttributes(Object(frontend\models\SignupForm), '[<span class="s...')
+#6 D:\www\localtest\frontend\models\SignupForm.php(46): yii\base\Model->validate()
+#7 D:\www\localtest\frontend\controllers\SiteController.php(153): frontend\models\SignupForm->signup()
+#8 [internal function]: frontend\controllers\SiteController->actionSignup()
+#9 D:\www\localtest\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array('[<span class="t...', '[]')
+#10 D:\www\localtest\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams('[<span class="s...')
+#11 D:\www\localtest\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('<span class="st...', '[<span class="s...')
+#12 D:\www\localtest\vendor\yiisoft\yii2\web\Application.php(87): yii\base\Module->runAction('<span class="st...', '[<span class="s...')
+#13 D:\www\localtest\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#14 D:\www\localtest\frontend\web\index.php(18): yii\base\Application->run()
+#15 {main}
+Additional Information:
+Array
+(
+    [0] => 42S02
+    [1] => 1146
+    [2] => Table 'test.user' doesn't exist
+)
+
+2016-09-01 14:53:33 [::1][-][5gfftbft327hvc9r87ud51tdn7][info][application] $_GET = [
+    'r' => 'site/signup'
+]
+
+$_POST = [
+    '_csrf-frontend' => 'bUtJUVhqeDVUAjwGPSI8Z10hB2ASKyhvP3wqZSA6FUc1HAo5NDMafQ=='
+    'SignupForm' => [
+        'username' => 'wangrl'
+        'email' => '783413037@qq.com'
+        'password' => '123456'
+    ]
+    'signup-button' => ''
+]
+
+$_COOKIE = [
+    'advanced-frontend' => '5gfftbft327hvc9r87ud51tdn7'
+    '_csrf-frontend' => '086fbbc95528a84c6fdf7bf8c06b8c4c40191eafc1fd8084b61295008a66cad5a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"9IuWeHDR0jN1JAPZR7c4xPmrXWChlYbH\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'TeachInfinity'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/localtest/frontend/web/index.php?r=site%2Fsignup'
+    'HTTP_COOKIE' => 'advanced-frontend=5gfftbft327hvc9r87ud51tdn7; _csrf-frontend=086fbbc95528a84c6fdf7bf8c06b8c4c40191eafc1fd8084b61295008a66cad5a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%229IuWeHDR0jN1JAPZR7c4xPmrXWChlYbH%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'CONTENT_LENGTH' => '195'
+    'PATH' => 'D:\\pf\\Python 2.7\\;D:\\pf\\Python 2.7\\Scripts;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\TortoiseSVN\\bin;D:\\pf\\php\\curl_7_50_0_openssl_nghttp2_x64;D:\\pf\\php\\php-5.6.13-Win32-VC11-x64;C:\\ProgramData\\ComposerSetup\\bin;D:\\pf\\Python 2.7;C:\\work\\softWare\\wamp\\bin\\mysql\\mysql5.6.17\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.16 (Win64) PHP/5.6.13'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'D:/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/www'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'D:/www/localtest/frontend/web/index.php'
+    'REMOTE_PORT' => '63137'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=site%2Fsignup'
+    'REQUEST_URI' => '/localtest/frontend/web/index.php?r=site%2Fsignup'
+    'SCRIPT_NAME' => '/localtest/frontend/web/index.php'
+    'PHP_SELF' => '/localtest/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1472712813.494
+    'REQUEST_TIME' => 1472712813
+]
